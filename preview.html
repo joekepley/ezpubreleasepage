@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body data-spy="scroll" data-target=".navbar">
+    <div class="container">
+        <head class="main-header" >
+            <a href="/">
+                <img class="main-logo" src="img/logo.png" />
+            </a>
+            <nav class="main-nav navbar affix-top" data-spy="affix" data-offset-top="67">
+                <div class="navbar-inner">
+                    <ul class="nav nav-main mainnav">
+                        <li><a href="#release_history">Release History</a></li>
+                        <li><a href="#downloads">Downloads</a></li>
+                        <li><a href="#other_resources">Other Resources</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </head>
+        <div class="main">
+            <article class="body span8">
+                <section id="release_history">
+                    <h3>Release history</h3>
+                    <p><a href="/ezpublish_version_history/index.php">This graph</a> details the evolution of eZ Publish over time.</p>
+                </section>
+                <section id="downloads">
+
+                    <h3>API documentation and Downloads</h3>
+
+                    <ul class="nav nav-tabs">
+                        <li><a href="#Trunk" data-toggle="tab">Development Trunk</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Enterprise Edition <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#v50" data-toggle="tab">5.0</a></li>
+                                <li><a href="#v47" data-toggle="tab">4.7</a></li>
+                                <li><a href="#v46" data-toggle="tab">4.6</a></li>
+                                <li><a href="#v45" data-toggle="tab">4.5</a></li>
+                                <li><a href="#v44" data-toggle="tab">4.4</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Community Edition <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#v20134" data-toggle="tab">2013.4</a></li>
+                                <li><a href="#v20131" data-toggle="tab">2013.1</a></li>
+                                <li><a href="#v201212" data-toggle="tab">2012.12</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#Older" data-toggle="tab">Older Releases</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="Trunk" class="tab-pane active">
+                            <h3>Trunk</h3>
+                            <p>Automatically updated daily from github branches.</p>
+
+                            <label>Download Format
+                                <select class="download-format-select">
+                                    <option value="format-read">Read Online</option>
+                                    <option value="format-gz">Gzip</option>
+                                    <option value="format-bz2">Bzip 2</option>
+                                    <option value="format-zip">Zip</option>
+                                </select>
+                            </label>
+
+                            <h4>Source</h4>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th class="stack">Legacy Stack</th>
+                                        <td class="github">
+                                            <a href="https://github.com/ezsystems/ezpublish-legacy" class="download-link format-all">Available via Github</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="stack">New Stack</th>
+                                        <td class="github">
+                                            <a href="https://github.com/ezsystems/ezpublish-kernel" class="download-link format-all">Available via Github</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="stack">Platform</th>
+                                        <td class="github">
+                                            <a href="https://github.com/ezsystems/ezpublish-community" class="download-link format-all">Available via Github</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h4>API Docs</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="stack"></th>
+                                        <th class="doxygen">Doxygen</th>
+                                        <th class="dockblox">DocBlox</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Legacy Stack</th>
+                                        <td>
+                                            <a class="download-link format-read format-zip" href="http://pubsvn.ez.no/doxygen/trunk/html/index.html">Read Online</a>
+                                            <a class="download-link format-gz" href="http://pubsvn.ez.no/doxygen/trunk/ezpublish-trunk-apidocs.tar.gz">Download (gz)</a>
+                                            <a class="download-link format-bz2" href="http://pubsvn.ez.no/doxygen/trunk/ezpublish-trunk-apidocs.tar.bz2">Download (bz2)</a>
+                                            <span class="muted download-link format-zip">Zip Not Available</span>
+                                        </td>
+                                        <td>
+                                            <a class="download-link format-read format-zip" href="http://pubsvn.ez.no/docblox/trunk/html/index.html">Read Online</a>
+                                            <a class="download-link format-gz" href="http://pubsvn.ez.no/docblox/trunk/ezpublish-trunk-apidocs3.tar.gz">Download (gz)</a>
+                                            <a class="download-link format-bz2" href="http://pubsvn.ez.no/docblox/trunk/ezpublish-trunk-apidocs3.tar.bz2">Download (bz2)</a>
+                                            <span class="muted download-link format-zip">Zip Not Available</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>New Stack</th>
+                                        <td>
+                                            <a class="download-link format-read format-zip format-gz format-bz2" href="http://ezsystems.github.com/ezp-next/doxygen/html/">Read Online</a>
+                                            <span class="muted download-link format-zip format-gz format-bz2">Downloads Not Available</span>
+                                        </td>
+                                        <td>
+                                            <a class="download-link format-read format-zip format-gz format-bz2" href="http://ezsystems.github.com/ezp-next/phpDocumentor/">Read Online</a>
+                                            <span class="muted download-link format-zip format-gz format-bz2">Downloads Not Available</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                        <div id="v50" class="tab-pane">
+                            <h3>5.0 Enterprise Edition</h3>
+
+                            <label>Download Format
+                                <select class="download-format-select">
+                                    <option value="format-read">Read Online</option>
+                                    <option value="format-gz">Gzip</option>
+                                    <option value="format-zip">Zip</option>
+                                </select>
+                            </label>
+
+                            <h4>Source</h4>
+                            <p>Source is available via the <a href="http://support.ez.no">Enterprise Portal</a></p>
+
+                            <h4>API Docs</h4>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="stack"></th>
+                                    <th class="doxygen">Doxygen</th>
+                                    <th class="dockblox">DocBlox</th>
+                                    <th class="sami">Sami</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>Legacy Stack</th>
+                                    <td>
+                                        <a class="download-link format-read" href="http://pubsvn.ez.no/doxygen/5.0.0/LS/index.html">Read Online</a>
+                                        <a class="download-link format-gz" href="http://pubsvn.ez.no/doxygen/5.0.0/ezpublish-5.0-apidocs-doxygen-LS.tar.gz">Download (gz)</a>
+                                        <a class="download-link format-zip" href="http://pubsvn.ez.no/doxygen/5.0.0/ezpublish-5.0-apidocs-doxygen-LS.zip">Download (zip)</a>
+                                    </td>
+                                    <td>
+                                        <a class="download-link format-read" href="http://pubsvn.ez.no/docblox/5.0.0/LS/index.html">Read Online</a>
+                                        <a class="download-link format-gz" href="http://pubsvn.ez.no/docblox/5.0.0/ezpublish-5.0-apidocs-docblox-LS.tar.gz">Download (gz)</a>
+                                        <a class="download-link format-zip" href="http://pubsvn.ez.no/docblox/5.0.0/ezpublish-5.0-apidocs-docblox-LS.zip">Download (zip)</a>
+                                    </td>
+                                    <td>
+                                        <a class="download-link format-read" href="http://pubsvn.ez.no/sami/5.0.0/LS/index.html">Read Online</a>
+                                        <a class="download-link format-gz" href="http://pubsvn.ez.no/sami/5.0.0/ezpublish-5.0-apidocs-sami-LS.tar.gz">Download (gz)</a>
+                                        <a class="download-link format-zip" href="http://pubsvn.ez.no/sami/5.0.0/ezpublish-5.0-apidocs-sami-LS.zip">Download (zip)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>New Stack</th>
+                                    <td>
+                                        <a class="download-link format-read" href="http://pubsvn.ez.no/doxygen/5.0.0/NS/index.html">Read Online</a>
+                                        <a class="download-link format-gz" href="http://pubsvn.ez.no/doxygen/5.0.0/ezpublish-5.0-apidocs-doxygen-NS.tar.gz">Download (gz)</a>
+                                        <a class="download-link format-zip" href="http://pubsvn.ez.no/doxygen/5.0.0/ezpublish-5.0-apidocs-doxygen-NS.zip">Download (zip)</a>
+                                    </td>
+                                    <td>
+                                        <p class="muted">Docblox not available</p>
+                                    </td>
+                                    <td>
+                                        <a class="download-link format-read" href="http://pubsvn.ez.no/sami/5.0.0/NS/index.html">Read Online</a>
+                                        <a class="download-link format-gz" href="http://pubsvn.ez.no/sami/5.0.0/ezpublish-5.0-apidocs-sami-NS.tar.gz">Download (gz)</a>
+                                        <a class="download-link format-zip" href="http://pubsvn.ez.no/sami/5.0.0/ezpublish-5.0-apidocs-sami-NS.zip">Download (zip)</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="v47" class="tab-pane">
+                            <h3>4.7 Enterprise Edition</h3>
+                            <label>Download Format
+                                <select class="download-format-select">
+                                    <option value="format-read">Read Online</option>
+                                    <option value="format-gz">Gzip</option>
+                                    <option value="format-bz2">Bzip 2</option>
+                                    <option value="format-zip">Zip</option>
+                                </select>
+                            </label>
+
+                            <h4>Source</h4>
+                            <p>Source is available via the <a href="http://support.ez.no">Enterprise Portal</a></p>
+
+                            <h4>API Docs</h4>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="stack"></th>
+                                    <th class="doxygen">Doxygen</th>
+                                    <th class="dockblox">DocBlox</th>
+                                    <th class="sami">DocBlox</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>Legacy Stack</th>
+                                    <td>
+                                        <a class="download-link format-read" href="">Read Online</a>
+                                        <a class="download-link format-gz" href="">Download (gz)</a>
+                                        <a class="download-link format-bz2" href="">Download (bz2)</a>
+                                        <a class="download-link format-zip" href="">Download (zip)</a>
+                                    </td>
+                                    <td>
+                                        <a class="download-link format-read" href="">Read Online</a>
+                                        <a class="download-link format-gz" href="">Download (gz)</a>
+                                        <a class="download-link format-bz2" href="">Download (bz2)</a>
+                                        <a class="download-link format-zip" href="">Download (zip)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>New Stack</th>
+                                    <td>
+                                        <a class="download-link format-read" href="">Read Online</a>
+                                        <a class="download-link format-gz" href="">Download (gz)</a>
+                                        <a class="download-link format-bz2" href="">Download (bz2)</a>
+                                        <a class="download-link format-zip" href="">Download (zip)</a>
+                                    </td>
+                                    <td>
+                                        <a class="download-link format-read" href="">Read Online</a>
+                                        <a class="download-link format-gz" href="">Download (gz)</a>
+                                        <a class="download-link format-bz2" href="">Download (bz2)</a>
+                                        <a class="download-link format-zip" href="">Download (zip)</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="v46" class="tab-pane">
+                            <h3>4.6 Enterprise Edition</h3>
+                        </div>
+                        <div id="v45" class="tab-pane">
+                            <h3>4.5 Enterprise Edition</h3>
+                        </div>
+                        <div id="v44" class="tab-pane">
+                            <h3>4.4 Enterprise Edition</h3>
+                        </div>
+                        <div id="v20134" class="tab-pane">
+                            <h3>Community Release 2013.4</h3>
+                        </div>
+                        <div id="v20131" class="tab-pane">
+                            <h3>Community Release 2013.1</h3>
+                        </div>
+                        <div id="v201212" class="tab-pane">
+                            <h3>Community Release 2012.12</h3>
+                        </div>
+                        <div id="Older" class="tab-pane">
+                            <h3>Older</h3>
+                        </div>
+
+                    </div>
+                </section>
+                <section id="other_resources">
+                    <h3>Other Resources</h3>
+                    <h4>GitHub</h4>
+                    <ul>
+                        <li><a href="http://github.com/ezsystems">All eZ code</a></li>
+                    </ul>
+
+                    <h4>eZ Publish Extensions</h4>
+                    <ul>
+                        <li><a href="http://projects.ez.no">Projects.ez.no</a></li>
+                        <!--<li><a href="http://ez.no/developer/contribs">Contribs section on ez.no</a></li>-->
+                        <li>more eZ Systems extensions (<a href="http://svn.ez.no/svn/extensions">SVN</a>) <!--(<a href="/websvn2/listing.php?repname=ez_extensions">WebSVN</a>)--></li>
+                    </ul>
+
+                    <h4>eZ Community website</h4>
+                    <ul>
+                        <li><a href="http://share.ez.no">share.ez.no</a></li>
+                        <li><a href="http://share.ez.no/get-involved">Get involved!</a></li>
+                    </ul>
+
+                    <h4>eZpedia community wiki</h4>
+                    <ul><li><a href="http://ezpedia.org">eZpedia wiki</a></li></ul>
+
+                    <!--<h2>Subversion repositories</h2>
+                    <ul>
+                      <li><a href="http://zev.ez.no/svn/extensions">eZ Systems extensions</a></li>
+                    </ul>-->
+
+                    <h4>Mailing lists</h4>
+                    <ul>
+                        <li><a href="http://lists.ez.no/mailman/listinfo">ez.no mailing lists</a></li>
+                    </ul>
+
+                    <h4>Feeds</h4>
+                    <ul>
+                        <li><a href="http://www.planetezpublish.org/">Planet eZ Publish</a></li>
+                    </ul>
+
+                    <h4>Documentation</h4>
+                    <ul>
+                        <li><a href="http://doc.ez.no/">Official eZ Publish documentation</a></li>
+                        <!--<li><a href="http://ez.no/ezpublish/documentation/toc">Old documentation</a>
+                          <ul>
+                            <li><a href="http://ez.no/ez_publish/documentation/incoming/developing_the_community/help/svn">Subversion (SVN)</a></li>
+                            <li><a href="http://ez.no/ez_publish/documentation/incoming/developing_the_community/help/the_community_server">The Community Server</a></li>
+                            <li><a href="http://ez.no/ez_publish/documentation/development/standards/php">Coding Style Guide</a></li>
+                          </ul>
+                        </li>-->
+                    </ul>
+
+                </section>
+
+            </article>
+            <sidebar class="news span3">
+                <h4>News</h4>
+                <ul>
+
+                    <li><p>2013.4.29 : added docs for eZP 4.7, 5.0, 2012.12, 2013.1 and 2013.4; fixed links to Github</p></li>
+
+                    <li><p>2013.1.14 : upgraded doxygen and piwik; added doc for latest CP versions; added more links to sources on github</p></li>
+
+                    <li><p>2012.07.26 : added documentation for the CP versions; a bit of styling love...</p></li>
+
+                    <li><p>2012.06.13 : updated doxygen and piwik</p></li>
+
+                    <li><p>2012.01.23 : updated doxygen to 1.7.6.1, docblox 1.8.1 and phpdoc 1.4.4; added documentation for versions 4.6 and 4.5; changed documentation for all branches (except trunk) - it is now generated from release versions, not from git branches anymore</p></li>
+
+                    <li><p>2011.08.28 : updated doxygen to 1.5.1; added documentation generated with the docblox tool</p></li>
+
+                    <li><p>2011.03.29 : moved to a new server; disabled access stats, viewvc, websvn, statsvn and SVN access; added phpdoc-generated docs; updated doxygen to 1.7.4; added some directories to those scanned for php classes</p></li>
+
+                    <li><p>2010.10.12 : added the 4.4 stable branch; reactivated doc generation and source tarball creation from github sources for all branches starting from 4.0</p></li>
+
+                    <li><p>2010.04.13 : added the 4.3 stable branch;<br/>updated websvn, viewvc, statsvn and doxygen;<br/>added <a href="/piwik">Piwik stats</a></p></li>
+
+                    <li><p>2009.09.30 : added the 4.2 stable branch</p></li>
+
+                    <li><p>2009.09.22 : updated viewvc to version 1.1.2</p></li>
+
+                    <li><p>2009.05.20 : updated php to version 5 to fix problems with websvn on some php files; enabled http compression</p></li>
+
+                    <li><p>2009.05.18 : access statistics are back for everybody; updated viewvc to version 1.1.0, websvn to version 2.2.1</p></li>
+
+                    <li><p>2009.05.07 : added a websvn view to the "extensions" svn repository and changed its servername from zev.ez.no to svn.ez.no; Added statsvn-generated stats to all eZP branches</p></li>
+
+                    <li><p>2009.05.06 : The api docs generated via Doxygen are now available for download as a zip files</p></li>
+
+                    <li><p>2009.04.17 : The tools installed on the community server have been upgraded to the latest available version (viewvc, doxygen,
+                        statsvn, websvn2). Websvn 1 and ViewCVS have been removed as old and unmaintained. Added link to 4.1 branch and corrected the generation scripts</p></li>
+
+                    <li><p>2008.03.31 : The community repository has been made read-only on the 31st of March 2008 and will rest in peace, in favor of <a href="http://projects.ez.no">eZ Projects</a>.
+                        We recommend everyone to move their extensions to eZ Projects as soon as possible. For more information, please read
+                        <a href="http://blog.coomanskristof.be/2008/02/27/pubsvn-community-subversion-repository-closing-31st-of-march/">Kristof's blog article regarding this topic</a>.
+                    </p></li>
+
+                    <li><p>Some extensions have been made read-only in the community repository, because they are now using the project spaces at
+                        <a href="http://projects.ez.no">eZ projects</a> instead. eZpedia offers
+                        <a href="http://ezpedia.org/wiki/en/ez/pubsvn_commit_access_restrictions">a list of these read-only paths in the community
+                            repository</a>. We recommend everyone to move their extensions to eZ projects. If you do so then send a list with the related
+                        paths in the community repository to <a href="mailto:kristof.coomans@telenet.be">Kristof</a> so he can make them read-only.
+                    </p></li>
+
+                    <!--<h2 id="nextgen_php5">The nextgen_php5 repository is deprecated</h2>-->
+                    <li><p>The nextgen_php5 repository is deprecated. It contains a PHP 5 port of eZ Publish 3.9. It was started by the eZ Publish Community. eZ Systems has adopted the port and based on the initial work done by the community, they were able to release eZ Publish 4 in December 2007. It is recommended that you use the official version from eZ Systems, because no further updates will be done on the community port.</p></li>
+
+                </ul>
+
+            </sidebar>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
