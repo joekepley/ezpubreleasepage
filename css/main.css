@@ -25,6 +25,18 @@ th.sami { width: 28%; }
     background: #f69000; color: black;
 }
 
+.version-nav { margin-bottom: 5px; }
+.tab-pane h3 { margin-top: 0; }
+
 .news ul { list-style: none; padding: 0; margin: 0; }
 .news li { list-style: none; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-top: 10px;  }
 .news li p { margin: 0; }
+
+section { border-bottom: 1px solid #ddd; margin-bottom: 3em; padding-bottom: 1em; overflow: hidden; }
+
+.tile { border: 1px solid #ccc; width: 29%; float: left; height: 180px; padding: 10px; 
+    margin: 5px; border-radius: 4px; 
+}
+
+.tile h4 { margin-top: 0; }
+
